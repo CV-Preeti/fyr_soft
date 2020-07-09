@@ -70,7 +70,7 @@ body {
      flex-direction: row;
       flex-wrap: wrap;
       padding:10px;
-      width:100%;
+     
   }
   .wrapper{
       display:flex;
@@ -105,14 +105,43 @@ body {
      
     
   }
+  .img_sec{
+    padding:30px;
+  }
+  .row1 .col-md-3{
+    padding:0px;
+    display:flex;
+  }
+ 
   @media screen and (max-width:1190px){
       .main_col{
           height:auto;
           width:100%;
           padding:5px;
+          margin-bottom:5px;
       }
       .main_col button{
           position:relative;
           margin-top: 20px;
       }
+      
   }
+  @media screen and (min-width:600px){
+    .row1 .col-md-3{
+      flex:0 0 25%;
+      max-width:25% ;
+    }
+  }
+  @media screen and (max-width:600px){
+    .row1 .col-md-3{
+      padding:30px;
+      display:flex;
+     
+    }
+    .img_sec{
+      padding:0px;
+    }
+  }
+ 
+    
+  
